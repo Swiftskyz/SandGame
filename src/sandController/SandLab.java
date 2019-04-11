@@ -104,6 +104,20 @@ public class SandLab
 				  
 				  drawColor = new Color(red, green, blue);
 			  }
+			  else if (grid[row][col] == GRASS)
+			  {
+				  drawColor = Color.GREEN;
+			  }
+			  else if (grid[row][col] == FUZZY_BUNNY)
+			  {
+				  drawColor = new Color(205, 133, 63);
+			  }
+			  else
+			  {
+				  drawColor = Color.ORANGE;
+			  }
+			  
+			  display.setColor(row, col, drawColor);
 		  }
 	  }
 	  
